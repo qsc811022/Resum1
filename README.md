@@ -1,5 +1,5 @@
 # 劉敦桐 個人履歷網站
-
+https://qsc811022.github.io/Resum1/
 這是一個以 HTML + CSS 打造的個人履歷與作品展示網站，採用純前端技術實作，適合部署在 GitHub Pages 或任意靜態主機上。
 
 ## 🔗 Demo 連結
