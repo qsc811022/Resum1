@@ -1,14 +1,14 @@
 :root {
-  --bg: #f5f7fb;
+  --bg: #f6f7f9;
   --surface: #ffffff;
-  --surface-soft: #eef3f8;
+  --surface-soft: #eef2f6;
   --text: #172033;
-  --muted: #5d6a7e;
-  --line: #dce3ec;
-  --primary: #1f6feb;
-  --primary-dark: #164fa8;
+  --muted: #5a6475;
+  --line: #dbe2ea;
+  --primary: #1d4ed8;
+  --primary-dark: #173c9c;
   --accent: #0f766e;
-  --shadow: 0 18px 45px rgba(23, 32, 51, 0.08);
+  --shadow: 0 18px 42px rgba(23, 32, 51, 0.08);
 }
 
 * {
@@ -40,14 +40,19 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
 
-.navbar-container {
+.navbar-container,
+.hero-inner,
+.container {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
+}
+
+.navbar-container {
   min-height: 72px;
   display: flex;
   align-items: center;
@@ -57,8 +62,7 @@ a:hover {
 
 .logo {
   font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 0;
+  font-weight: 900;
   color: var(--text);
 }
 
@@ -72,49 +76,81 @@ a:hover {
 }
 
 .nav-links a {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .hero {
   background:
-    linear-gradient(135deg, rgba(31, 111, 235, 0.10), rgba(15, 118, 110, 0.10)),
+    linear-gradient(120deg, rgba(29, 78, 216, 0.09), rgba(15, 118, 110, 0.08)),
     var(--bg);
   border-bottom: 1px solid var(--line);
 }
 
 .hero-inner {
-  width: min(1120px, calc(100% - 40px));
-  margin: 0 auto;
   min-height: calc(100vh - 72px);
-  padding: 80px 0;
+  padding: 82px 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) 360px;
+  grid-template-columns: minmax(0, 1.45fr) 360px;
   align-items: center;
-  gap: 48px;
+  gap: 54px;
 }
 
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent);
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .hero h1 {
   margin: 0;
-  max-width: 680px;
-  font-size: clamp(2.4rem, 5vw, 4.6rem);
-  line-height: 1.08;
+  max-width: 760px;
+  font-size: clamp(2.4rem, 5vw, 4.35rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 
-.hero-description {
-  max-width: 720px;
-  margin: 24px 0 0;
+.hero-description,
+.section-heading p,
+.project-card p,
+.contact-card p {
   color: var(--muted);
+}
+
+.hero-description {
+  max-width: 760px;
+  margin: 24px 0 0;
   font-size: 1.08rem;
+}
+
+.hero-highlights {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.hero-highlights div {
+  min-height: 92px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(219, 226, 234, 0.9);
+  border-radius: 8px;
+}
+
+.hero-highlights strong {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.hero-highlights span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .hero-actions,
@@ -133,7 +169,7 @@ a:hover {
   padding: 0 18px;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-weight: 800;
+  font-weight: 900;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -144,7 +180,7 @@ a:hover {
 .btn-primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 12px 24px rgba(31, 111, 235, 0.22);
+  box-shadow: 0 12px 24px rgba(29, 78, 216, 0.22);
 }
 
 .btn-primary:hover {
@@ -162,18 +198,18 @@ a:hover {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 28px;
+  padding: 30px;
   box-shadow: var(--shadow);
 }
 
 .profile-pic {
-  width: 136px;
-  height: 136px;
+  width: 138px;
+  height: 138px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin-bottom: 22px;
-  border: 4px solid var(--surface-soft);
+  border: 5px solid var(--surface-soft);
 }
 
 .profile-name {
@@ -201,7 +237,7 @@ a:hover {
 .profile-details dt {
   color: var(--muted);
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .profile-details dd {
@@ -218,21 +254,21 @@ a:hover {
   border-block: 1px solid var(--line);
 }
 
-.container {
-  width: min(1120px, calc(100% - 40px));
-  margin: 0 auto;
-}
-
 .section-heading {
+  max-width: 760px;
   margin-bottom: 34px;
 }
 
 .section-heading h2,
 .contact-card h2 {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
   line-height: 1.25;
   letter-spacing: 0;
+}
+
+.section-heading p {
+  margin: 12px 0 0;
 }
 
 .skills-grid,
@@ -282,7 +318,7 @@ a:hover {
 
 .experience-card {
   position: relative;
-  padding: 26px;
+  padding: 26px 26px 26px 30px;
 }
 
 .experience-card::before {
@@ -298,10 +334,10 @@ a:hover {
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 8px 14px;
   color: var(--muted);
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .tags {
@@ -320,26 +356,29 @@ a:hover {
   background: #e8f1ff;
   color: #174ea6;
   font-size: 0.85rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .project-card {
-  min-height: 280px;
+  min-height: 286px;
   padding: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.projects-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-card p {
-  color: var(--muted);
   margin: 0;
 }
 
 .project-subtitle {
   color: var(--accent);
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 8px;
 }
 
@@ -355,7 +394,7 @@ a:hover {
 }
 
 .contact-card {
-  background: var(--text);
+  background: #172033;
   color: #fff;
   border-radius: 8px;
   padding: 42px;
@@ -392,7 +431,7 @@ a:hover {
 
   .hero-inner {
     min-height: auto;
-    padding: 56px 0;
+    padding: 58px 0;
     grid-template-columns: 1fr;
   }
 
@@ -400,8 +439,7 @@ a:hover {
     max-width: 460px;
   }
 
-  .skills-grid,
-  .projects-grid {
+  .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -422,9 +460,10 @@ a:hover {
   }
 
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.32rem;
   }
 
+  .hero-highlights,
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
