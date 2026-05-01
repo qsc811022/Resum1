@@ -23,6 +23,13 @@ window.resumeData = {
   ],
 
   sections: {
+    nav: {
+      about: "關於",
+      skills: "技能",
+      experience: "經歷",
+      projects: "專案",
+      contact: "聯絡",
+    },
     skills: {
       eyebrow: "Technical Stack",
       title: "核心技能",

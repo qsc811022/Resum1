@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>劉敦桐 | 後端工程師履歷</title>
+    <title>劉敦桐 | 工程師履歷</title>
     <meta name="description" content="後端工程師個人履歷網站，專注 ASP.NET Core MVC、C#、SQL Server、Dapper、Entity Framework 與系統維運經驗。">
     <link rel="stylesheet" href="my.css">
     <script src="resume-data.js" defer></script>
@@ -16,11 +16,11 @@
         <div class="navbar-container">
             <a class="logo" href="#about" data-profile="name" aria-label="回到首頁">劉敦桐</a>
             <nav class="nav-links" aria-label="主要導覽">
-                <a href="#about">關於</a>
-                <a href="#skills">技能</a>
-                <a href="#experience">經歷</a>
-                <a href="#projects">專案</a>
-                <a href="#contact">聯絡</a>
+                <a href="#about" data-section="nav.about"></a>
+                <a href="#skills" data-section="nav.skills"></a>
+                <a href="#experience" data-section="nav.experience"></a>
+                <a href="#projects" data-section="nav.projects"></a>
+                <a href="#contact" data-section="nav.contact"></a>
             </nav>
         </div>
     </header>
@@ -97,26 +97,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a id="footerEmail" href="#">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    <span data-profile="email"></span>
-                </a>
-                <a id="footerGithub" href="#" target="_blank" rel="noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7 2"/></svg>
-                    <span data-profile="githubName"></span>
-                </a>
-                <a id="footerPhone" href="#">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span data-profile="phone"></span>
-                </a>
-            </div>
-            <p class="copyright">© 2026 <span data-profile="name"></span> · All rights reserved</p>
-        </div>
-    </footer>
 </body>
 
 </html>
