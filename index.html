@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>劉敦桐 - 個人履歷作品集</title>
+    <title>劉敦桐 | 後端工程師履歷</title>
+    <meta name="description" content="後端工程師個人履歷，包含 C#、ASP.NET Core MVC、SQL Server、系統維運與專案作品。">
     <link rel="stylesheet" href="my.css">
 </head>
 
 <body>
-    <!-- 導覽列 -->
     <header class="navbar">
         <div class="navbar-container">
-            <h1 class="logo">劉敦桐</h1>
-            <nav class="nav-links">
+            <a class="logo" href="#about" aria-label="回到首頁">劉敦桐</a>
+            <nav class="nav-links" aria-label="主要導覽">
                 <a href="#about">關於我</a>
                 <a href="#skills">技能</a>
                 <a href="#experience">經歷</a>
@@ -23,223 +23,258 @@
         </div>
     </header>
 
-    <!-- 關於我 -->
-    <section id="about" class="section section-about">
-        <div class="about-content">
-            <img src="Personal.jpg" alt="頭像" class="profile-pic" />
-
-            <h2 class="about-name">劉敦桐</h2>
-            <p class="about-description">
-                主動學習與邏輯思維佳的工程師，專長 C#、ASP.NET Core MVC、SQL，熱衷於技術成長與自動化實作。
-            </p>
-
-            <a href="https://github.com/qsc811022" target="_blank" class="btn-github">
-                查看我的 GitHub
-            </a>
-        </div>
-        </div>
-    </section>
-
-    <!-- 技能專長 -->
-    <section id="skills" class="section section-skills">
-        <div class="container">
-            <h2 class="section-title">技能專長</h2>
-            <div class="skills-grid">
-                <!-- 程式語言 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">程式語言</h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Shell Script</li>
-                    </ul>
-                </div>
-
-                <!-- 後端技術 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">後端技術</h3>
-                    <ul>
-                        <li>ASP.NET Core MVC</li>
-                        <li>Entity Framework</li>
-                        <li>Dapper</li>
-                        <li>ADO.NET</li>
-                    </ul>
-                </div>
-
-                <!-- 資料庫與工具 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">資料庫與工具</h3>
-                    <ul>
-                        <li>SQL Server</li>
-                        <li>Git</li>
-                        <li>Docker</li>
-                    </ul>
-                </div>
-
-                <!-- 系統與監控 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">系統與監控</h3>
-                    <ul>
-                        <li>Linux / Windows Server</li>
-                        <li>Nagios</li>
-                        <li>VMware</li>
-                    </ul>
-                </div>
-
-                <!-- 前端技術 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">前端框架</h3>
-                    <ul>
-                        <li>Vue</li>
-                    </ul>
-                </div>
-
-                <!-- AI 與開發輔助 -->
-                <div class="skill-card">
-                    <h3 class="skill-title">AI 與輔助工具</h3>
-                    <ul>
-                        <li>ChatGPT / Prompt Engineering</li>
-                        <li>LLM 應用整合</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 工作經歷 -->
-    <section id="experience" class="section section-experience">
-        <div class="container">
-            <h2 class="section-title">工作經歷</h2>
-            <div class="experience-list">
-                <!-- 經歷 1 -->
-                <div class="experience-card">
-                    <h3 class="experience-title">JavaScript 工程師訓練營 - 前端實戰培訓</h3>
-                    <p class="experience-period">2025/07 - 2025/11（預計5個月）</p>
-                    <ul class="experience-tasks">
-                        <li>學習 React、Next.js、Node.js 與 RESTful API 串接</li>
-                        <li>團隊協作開發全端作品，包含 UI 設計與 Docker 部署</li>
-                        <li>掌握 Tailwind CSS、Git、MySQL 等技術</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>#React</span>
-                        <span>#Node.js</span>
-                        <span>#Tailwind</span>
-                    </div>
-                </div>
-
-                <!-- 經歷 2 -->
-                <div class="experience-card">
-                    <h3 class="experience-title">Server System Validation Engineer - 和碩聯合科技</h3>
-                    <p class="experience-period">2022/04 - 2025/06（3年3個月）</p>
-                    <ul class="experience-tasks">
-                        <li>負責伺服器平台測試、BIOS 相容性測試與問題追蹤</li>
-                        <li>開發自動化測試腳本（Bash / Python），提升測試效率</li>
-                        <li>跨部門協作，處理異常狀況與測試需求</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>#Bash</span>
-                        <span>#Python</span>
-                        <span>#BIOS</span>
-                    </div>
-                </div>
-
-                <!-- 經歷 3 -->
-                <div class="experience-card">
-                    <h3 class="experience-title">System Engineer - 優必達</h3>
-                    <p class="experience-period">2019/01 - 2022/04（3年4個月）</p>
-                    <ul class="experience-tasks">
-                        <li>部署與管理 Linux / Windows Server 系統與服務</li>
-                        <li>使用 Nagios 監控系統運作與異常排除</li>
-                        <li>撰寫 Shell / Python 腳本，實現日常作業自動化</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>#Linux</span>
-                        <span>#Nagios</span>
-                        <span>#ShellScript</span>
-                    </div>
-                </div>
-                <!-- 經歷1 -->
-                <div class="experience-card">
-                    <h3 class="experience-title">維運工程師 - 康和證券</h3>
-                    <p class="experience-period">2017/09 - 2017/12（3個月）</p>
-                    <ul class="experience-tasks">
-                        <li>系統維運:證券/期貨系統維運</li>
-                        <li>新進同仁帳號/離職同仁帳號權限新增或刪除</li>
-                        <li>帳號盤點</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>#Linux</span>
-                        <span>#Windows</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 作品展示 -->
-    <section id="projects" class="section section-projects">
-        <div class="container">
-            <h2 class="section-title">作品展示</h2>
-            <div class="projects-grid">
-                <!-- 專案 1：歷史事件時間軸 -->
-                <div class="project-card">
-                    <h3 class="project-title">歷史事件時間軸</h3>
-                    <p class="project-subtitle">React + TypeScript｜2025/05 - 2025/06</p>
-                    <p class="project-description">
-                        支援分類篩選與動態新增事件，可依照時間區段查詢，RWD 完整。
+    <main>
+        <section id="about" class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Backend Developer / System Engineer</p>
+                    <h1>劉敦桐</h1>
+                    <p class="hero-description">
+                        具備系統維運、伺服器驗證與 Web 開發經驗，熟悉 C#、ASP.NET Core MVC、SQL Server、
+                        Dapper 與 Entity Framework。能從需求拆解、資料庫設計、API 串接到部署維運，建立穩定且可維護的服務。
                     </p>
-                    <div class="project-tags">
-                        <span>#React</span>
-                        <span>#TypeScript</span>
-                        <span>#Vite</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://history-timeline-demo.vercel.app" target="_blank">Demo</a>
-                        <a href="https://github.com/qsc811022/history-timeline-demo" target="_blank">GitHub</a>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="mailto:zse811022@gmail.com">聯絡我</a>
+                        <a class="btn btn-secondary" href="https://github.com/qsc811022" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
                 </div>
 
-                <!-- 專案 2：醫事管理系統 -->
-                <div class="project-card">
-                    <h3 class="project-title">
-                        <h3>補習班網站</h3>
-                        <p class="project-subtitle">ASP.NET Core MVC + Dapper｜建置中</p>
-                        <p class="project-description">
-                            登入註冊、課程管理、角色權限、評價系統、資料表設計完整。
-                        </p>
-                        <div class="project-tags">
-                            <span>#ASP.NET Core</span>
-                            <span>#Dapper</span>
-                            <span>#SQL Server</span>
+                <aside class="profile-panel" aria-label="個人資訊">
+                    <img src="Personal.jpg" alt="個人照片" class="profile-pic">
+                    <div>
+                        <p class="profile-name">劉敦桐</p>
+                        <p class="profile-role">C# / ASP.NET Core / SQL Server</p>
+                    </div>
+                    <dl class="profile-details">
+                        <div>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:zse811022@gmail.com">zse811022@gmail.com</a></dd>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/qsc811022/WebApp0618" target="_blank">GitHub</a>
+                        <div>
+                            <dt>Phone</dt>
+                            <dd>0923-331-022</dd>
                         </div>
+                        <div>
+                            <dt>GitHub</dt>
+                            <dd><a href="https://github.com/qsc811022" target="_blank" rel="noreferrer">qsc811022</a></dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Technical Stack</p>
+                    <h2>專業技能</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>程式語言</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Shell Script</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>後端開發</h3>
+                        <ul>
+                            <li>ASP.NET Core MVC</li>
+                            <li>Entity Framework</li>
+                            <li>Dapper</li>
+                            <li>ADO.NET</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>資料庫與工具</h3>
+                        <ul>
+                            <li>SQL Server</li>
+                            <li>Git</li>
+                            <li>Docker</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>系統維運</h3>
+                        <ul>
+                            <li>Linux / Windows Server</li>
+                            <li>Nagios 監控</li>
+                            <li>VMware</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>前端技術</h3>
+                        <ul>
+                            <li>Vue</li>
+                            <li>React</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>AI 工具應用</h3>
+                        <ul>
+                            <li>ChatGPT</li>
+                            <li>Prompt Engineering</li>
+                            <li>LLM 輔助開發</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 聯絡我 -->
-    <section id="contact" class="section section-contact">
-        <div class="container">
-            <h2 class="section-title">聯絡我</h2>
-            <p class="contact-description">
-                歡迎透過以下方式與我聯繫，若有合作機會或職缺邀請，我將盡快回覆您。
-            </p>
+        <section id="experience" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Work Experience</p>
+                    <h2>工作經歷</h2>
+                </div>
+                <div class="timeline">
+                    <article class="experience-card">
+                        <div class="experience-meta">
+                            <span>2025/07 - 2025/11</span>
+                            <span>前端實戰培訓</span>
+                        </div>
+                        <h3>JavaScript 工程師訓練營</h3>
+                        <ul>
+                            <li>學習 React、Next.js、Node.js 與 RESTful API 開發流程。</li>
+                            <li>完成前端頁面切版、互動功能、Docker 建置與專案部署練習。</li>
+                            <li>使用 Tailwind CSS、Git、MySQL 進行版本控管與資料串接。</li>
+                        </ul>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </article>
 
-            <div class="contact-info">
-                <p>📧 Email：
-                    <a href="mailto:zse811022@gmail.com">zse811022@gmail.com</a>
-                </p>
-                <p>📱 手機：0923-331-022</p>
-                <p>💻 GitHub：
-                    <a href="https://github.com/qsc811022" target="_blank">github.com/qsc811022</a>
-                </p>
+                    <article class="experience-card">
+                        <div class="experience-meta">
+                            <span>2022/04 - 2025/06</span>
+                            <span>和碩聯合科技</span>
+                        </div>
+                        <h3>Server System Validation Engineer</h3>
+                        <ul>
+                            <li>負責伺服器平台驗證，協助 BIOS、硬體與系統功能測試。</li>
+                            <li>撰寫 Bash / Python 自動化腳本，降低重複測試與資料整理時間。</li>
+                            <li>追蹤測試異常、整理報告並與跨部門團隊合作釐清問題。</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Bash</span>
+                            <span>Python</span>
+                            <span>BIOS</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-meta">
+                            <span>2019/01 - 2022/04</span>
+                            <span>優必達</span>
+                        </div>
+                        <h3>System Engineer</h3>
+                        <ul>
+                            <li>維護 Linux / Windows Server 環境，處理例行維運與故障排除。</li>
+                            <li>使用 Nagios 建立監控機制，提升服務狀態可視性。</li>
+                            <li>以 Shell / Python 撰寫維運腳本，改善作業效率與一致性。</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Linux</span>
+                            <span>Nagios</span>
+                            <span>Shell Script</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-meta">
+                            <span>2017/09 - 2017/12</span>
+                            <span>康和證券</span>
+                        </div>
+                        <h3>維運工程師</h3>
+                        <ul>
+                            <li>協助 Linux / Windows 系統基本維運與環境設定。</li>
+                            <li>支援例行檢查、文件整理與內部工具操作。</li>
+                            <li>建立基礎系統管理與問題排查能力。</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Linux</span>
+                            <span>Windows</span>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected Projects</p>
+                    <h2>專案作品</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div>
+                            <p class="project-subtitle">React + TypeScript / 2025</p>
+                            <h3>歷史事件時間軸</h3>
+                            <p>
+                                以時間軸方式呈現歷史事件，支援響應式版面與互動瀏覽，重點放在清楚的資訊層級與可讀性。
+                            </p>
+                        </div>
+                        <div>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Vite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://history-timeline-demo.vercel.app" target="_blank" rel="noreferrer">Demo</a>
+                                <a href="https://github.com/qsc811022/history-timeline-demo" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div>
+                            <p class="project-subtitle">ASP.NET Core MVC + Dapper</p>
+                            <h3>補習班網站</h3>
+                            <p>
+                                使用 ASP.NET Core MVC 建立資料維護功能，搭配 Dapper 與 SQL Server 處理資料存取與查詢流程。
+                            </p>
+                        </div>
+                        <div>
+                            <div class="tags">
+                                <span>ASP.NET Core</span>
+                                <span>Dapper</span>
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/qsc811022/WebApp0618" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>歡迎聯絡討論合作機會</h2>
+                    <p>若您正在尋找具備後端開發、資料庫與系統維運背景的工程師，歡迎透過 Email 或 GitHub 與我聯繫。</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="mailto:zse811022@gmail.com">zse811022@gmail.com</a>
+                    <a class="btn btn-secondary" href="https://github.com/qsc811022" target="_blank" rel="noreferrer">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
