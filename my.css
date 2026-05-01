@@ -40,9 +40,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-container,
@@ -210,6 +211,12 @@ a:hover {
   display: block;
   margin-bottom: 22px;
   border: 5px solid var(--surface-soft);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
 }
 
 .profile-name {
@@ -285,6 +292,14 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(23, 32, 51, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover,
+.experience-card:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(23, 32, 51, 0.12);
 }
 
 .skill-card {
@@ -394,7 +409,7 @@ a:hover {
 }
 
 .contact-card {
-  background: #172033;
+  background: linear-gradient(135deg, #172033 0%, #1e3a5f 50%, #0f766e 100%);
   color: #fff;
   border-radius: 8px;
   padding: 42px;
@@ -485,4 +500,42 @@ a:hover {
   .contact-card {
     padding: 22px;
   }
+}
+
+/* Footer */
+footer {
+  background: var(--text);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 32px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-links a svg {
+  flex-shrink: 0;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.6;
 }

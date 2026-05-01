@@ -7,7 +7,7 @@ window.resumeData = {
     roleLabel: "Backend Developer / System Engineer",
     photo: "Personal.jpg",
     email: "zse811022@gmail.com",
-    phone: "0923-331-022",
+    phone: "xxxx",
     githubName: "qsc811022",
     githubUrl: "https://github.com/qsc811022",
     summary:
@@ -26,12 +26,14 @@ window.resumeData = {
     skills: {
       eyebrow: "Technical Stack",
       title: "核心技能",
-      description: "以後端開發、資料庫操作與系統維運為主軸，能支援產品從開發到部署後維護。",
+      description:
+        "以後端開發、資料庫操作與系統維運為主軸，能支援產品從開發到部署後維護。",
     },
     experience: {
       eyebrow: "Work Experience",
       title: "工作經歷",
-      description: "累積後端開發、伺服器驗證與系統維運經驗，能在開發與基礎架構之間有效溝通。",
+      description:
+        "累積後端開發、伺服器驗證與系統維運經驗，能在開發與基礎架構之間有效溝通。",
     },
     projects: {
       eyebrow: "Selected Projects",
@@ -51,7 +53,12 @@ window.resumeData = {
     },
     {
       title: "後端開發",
-      items: ["ASP.NET Core MVC", "RESTful API", "Entity Framework", "Dapper / ADO.NET"],
+      items: [
+        "ASP.NET Core MVC",
+        "RESTful API",
+        "Entity Framework",
+        "Dapper / ADO.NET",
+      ],
     },
     {
       title: "資料庫與工具",
@@ -59,7 +66,12 @@ window.resumeData = {
     },
     {
       title: "系統維運",
-      items: ["Linux / Windows Server", "Nagios 監控", "VMware", "問題排查與紀錄"],
+      items: [
+        "Linux / Windows Server",
+        "Nagios 監控",
+        "VMware",
+        "問題排查與紀錄",
+      ],
     },
     {
       title: "前端協作",
@@ -67,11 +79,29 @@ window.resumeData = {
     },
     {
       title: "AI 工具應用",
-      items: ["ChatGPT", "Prompt Engineering", "文件整理與程式輔助", "需求拆解與除錯支援"],
+      items: [
+        "ChatGPT",
+        "Prompt Engineering",
+        "文件整理與程式輔助",
+        "需求拆解與除錯支援",
+      ],
     },
   ],
 
   experience: [
+    {
+      period: "2025/12 - 在職中",
+      company: "PCHOME Online",
+      title: "資深系統工程師",
+      bullets: [
+        "負責公司內部 IT 基礎架構與使用者端技術支援（硬體 / 軟體 / 帳號 / 網路），提供電話、Teams 與遠端工具的一線技術支援，確保日常營運穩定",
+        "管理 Windows / macOS 使用環境，包含系統設定、軟體部署與更新、常見問題排除及效能基本檢測",
+        "維運辦公室 IT 設備與會議系統（印表機、掃描設備、Teams / Zoom 會議設備），確保設備運作穩定並快速排除異常。",
+        "管理 企業帳號與權限系統（AD、Email、VPN、檔案分享與群組權限），依公司資安流程進行帳號建立、權限控管與異動管理。",
+        "負責 人員到離職 IT 作業流程，包含設備交付、帳號開通 / 停用、權限回收與設備盤點。",
+      ],
+      tags: ["React", "Node.js", "Tailwind"],
+    },
     {
       period: "2025/07 - 2025/11",
       company: "前端實戰培訓",
@@ -108,7 +138,7 @@ window.resumeData = {
     {
       period: "2017/09 - 2017/12",
       company: "康和證券",
-      title: "系統維護實習",
+      title: "系統維運工程師",
       bullets: [
         "協助 Linux / Windows 環境基礎維護與問題排除。",
         "支援使用者端設定、軟體安裝與基礎網路檢查。",
@@ -127,7 +157,10 @@ window.resumeData = {
       tags: ["React", "TypeScript", "Vite"],
       links: [
         { label: "Demo", url: "https://history-timeline-demo.vercel.app" },
-        { label: "GitHub", url: "https://github.com/qsc811022/history-timeline-demo" },
+        {
+          label: "GitHub",
+          url: "https://github.com/qsc811022/history-timeline-demo",
+        },
       ],
     },
     {
@@ -136,7 +169,9 @@ window.resumeData = {
       description:
         "使用 ASP.NET Core MVC 建立資料管理功能，搭配 Dapper 與 SQL Server 處理資料查詢、顯示與基礎維護流程。",
       tags: ["ASP.NET Core", "Dapper", "SQL Server"],
-      links: [{ label: "GitHub", url: "https://github.com/qsc811022/WebApp0618" }],
+      links: [
+        { label: "GitHub", url: "https://github.com/qsc811022/WebApp0618" },
+      ],
     },
   ],
 };

@@ -82,6 +82,14 @@ const renderProfile = () => {
     row.append(description);
     profileDetails.append(row);
   });
+
+  // Footer links
+  const footerEmail = document.querySelector("#footerEmail");
+  const footerGithub = document.querySelector("#footerGithub");
+  const footerPhone = document.querySelector("#footerPhone");
+  if (footerEmail) footerEmail.href = emailHref;
+  if (footerGithub) footerGithub.href = profile.githubUrl;
+  if (footerPhone) footerPhone.href = `tel:${profile.phone.replace(/-/g, '')}`;
 };
 
 const renderHighlights = () => {
